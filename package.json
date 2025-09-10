@@ -1,0 +1,20 @@
+{
+  "name": "porftolio",
+  "version": "1.0.0",
+  "description": "basic portfolio web site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "baby"
+  ],
+  "author": "divyansh goswami",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.4",
+    "nodemailer": "^7.0.6"
+  }
+}
