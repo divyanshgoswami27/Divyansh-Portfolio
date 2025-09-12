@@ -63,3 +63,18 @@ fetch('http://localhost:3000/contact', {
     button.disabled = false;
   });
 });
+// Smooth scroll reveal
+window.addEventListener("scroll", function() {
+  document.querySelectorAll("section").forEach(section => {
+    const position = section.getBoundingClientRect().top;
+    if (position < window.innerHeight - 100) {
+      section.classList.add("visible");
+    }
+  });
+});
+
+// Contact form submission
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Thank you! Your message has been sent.");
+});
